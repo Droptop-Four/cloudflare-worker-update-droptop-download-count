@@ -1,0 +1,8 @@
+name = "update-droptop-download-count"
+main = "src/index.js"
+compatibility_date = "2024-02-23"
+
+workers_dev = false # or zone_id = "<ZONE ID>" if you have one
+
+[triggers]
+crons = ["*/20 * * * *"]

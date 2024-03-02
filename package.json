@@ -1,0 +1,16 @@
+{
+  "name": "update-droptop-download-count",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev",
+    "start": "wrangler dev"
+  },
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  },
+  "dependencies": {
+    "realm-web": "^2.0.0"
+  }
+}
