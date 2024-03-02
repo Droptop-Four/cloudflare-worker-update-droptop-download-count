@@ -28,7 +28,7 @@ async function getReleasesDownloads(privateKey) {
 					Accept: "application/vnd.github+json",
 					Authorization: `Bearer ${privateKey}`,
 					"X-GitHub-Api-Version": "2022-11-28",
-					"User-Agent": "Test-Worker",
+					"User-Agent": "update-droptop-download-count",
 				},
 			});
 			if (!response.ok) {
