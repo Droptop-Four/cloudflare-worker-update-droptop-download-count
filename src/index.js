@@ -88,9 +88,9 @@ async function getSupporterDownloads(apiKey) {
 export default {
 	async scheduled(event, env, ctx) {
 		const sentry = new Toucan({
-            dsn: env.SENTRY_DSN,
-            context: ctx,
-        });
+			dsn: env.SENTRY_DSN,
+			context: ctx,
+		});
 
 		const user = await realmLogin(env.REALM_APPID, env.REALM_APIKEY);
 		const collection = user.mongoClient('mongodb-atlas').db(env.DB).collection(env.COLLECTION);
@@ -101,7 +101,7 @@ export default {
 			await collection.updateOne({ title: 'downloads' }, { $set: { basic_downloads, update_downloads, supporter_downloads } });
 			console.log('Downloads updated successfully');
 		} catch (error) {
-            sentry.captureException(error);
+			sentry.captureException(error);
 			console.error('Error updating downloads:', error.message);
 		}
 	},

@@ -1,7 +1,7 @@
 
 # Cloudflare Worker Update Droptop Download Count
 
-This Cloudflare Worker updates every hour the number of times Droptop Four was downloaded.
+This Cloudflare Worker updates every day the number of times Droptop Four was downloaded.
 
 It gets the number of downloads from the number of downloads of the assets of every release of Droptop Four from the [Droptop-Four/Droptop-Four](https://github.com/Droptop-Four/Droptop-Four) repo.
 
